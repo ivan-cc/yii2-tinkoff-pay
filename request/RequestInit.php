@@ -101,6 +101,13 @@ class RequestInit extends AbstractRequest
      * @var array
      */
     private $_data;
+    
+    /**
+     * JSON объект содержащий данные о магазинах
+     *
+     * @var array
+     */
+    private $_shops;    
 
     /**
      * RequestInit constructor.
@@ -148,6 +155,9 @@ class RequestInit extends AbstractRequest
         if (null !== $this->_data) {
             $this->_dataFields['DATA'] = $this->getData();
         }
+        if (null !== $this->_shops) {
+            $this->_dataFields['Shops'] = $this->getShops();
+        }        
     }
 
     /**
@@ -202,6 +212,38 @@ class RequestInit extends AbstractRequest
         }
         return $this;
     }
+    
+    /**
+     * Добавление инфы о Магазине в запрос.
+     *
+     * @param string $shopCode Код магазина. Для параметра ShopСode необходимо использовать значение параметра Submerchant_ID,
+     * полученного при регистрации партнеров через xml.
+     * @param int $amount Сумма в копейках, которая относится к указанному в ShopCode партнеру
+     * @param string $name Наименование позиции
+     * @param int $fee Сумма комиссии в копейках, удерживаемая из возмещения Партнера в пользу Маркетплейса. Если не передано, используется комиссия, указанная при регистрации.
+     *
+     * @return self
+     */
+    public function addShop(string $shopCode, int $amount, string $name=null, int $fee=null): self
+    {
+        $shops = [
+            'ShopCode' => $shopCode,
+            'Amount' => $amount,
+        ];
+
+        if($name)
+        {
+            $shops['Name']=$name;
+        }
+
+        if($fee)
+        {
+            $shops['Fee']=$fee;
+        }
+
+        $this->_shops[] = $shops;
+        return $this;
+    }    
 
     /**
      * @param string $orderId
@@ -299,6 +341,14 @@ class RequestInit extends AbstractRequest
     {
         return $this->_redirectDueDate->format('Y-m-d\TH:i:s\Z');
     }
+    
+    /**
+     * @return null|array
+     */
+    public function getShops(): ?array
+    {
+        return $this->_shops;
+    }    
 
     /**
      * @return null|string
