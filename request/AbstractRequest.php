@@ -68,7 +68,7 @@ abstract class AbstractRequest implements RequestInterface
         foreach ($this->_dataFields as $field) {
             $token .= $field;
         }
-
+        unset($this->_dataFields['Password']);
         return hash('sha256', $token);
     }
 
