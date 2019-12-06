@@ -65,7 +65,12 @@ abstract class AbstractRequest implements RequestInterface
         $token = '';
         $this->_dataFields['Password'] = $this->_secretKey;
         ksort($this->_dataFields);
-        foreach ($this->_dataFields as $field) {
+        foreach ($this->_dataFields as $fieldName=>$field) {
+            //пропускаем массивы
+            if( in_array($fieldName, ['DATA', 'Shops']) )
+            {
+                continue;   
+            }
             $token .= $field;
         }
         unset($this->_dataFields['Password']);
