@@ -6,12 +6,12 @@
  * Time: 15:34
  */
 
-namespace moneyadmin\tinkoffPay\response;
+namespace ivan_cc\tinkoffPay\response;
 
 
 /**
  * Interface ResponseInterface
- * @package chumakovanton\tinkoffPay\response
+ * @package ivan_cc\tinkoffPay\response
  */
 interface ResponseInterface
 {
