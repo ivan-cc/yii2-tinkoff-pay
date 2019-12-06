@@ -1,4 +1,4 @@
-chumakovanton/yii2-tinkoff-pay
+ivan_cc/yii2-tinkoff-pay
 ==========================
 Extension for oplata.tinkoff.ru merchant API
 
