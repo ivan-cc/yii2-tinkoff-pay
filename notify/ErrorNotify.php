@@ -1,12 +1,12 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: moneyadmin
+ * User: ivan-cc
  * Date: 29.12.18
  * Time: 17:27
  */
 
-namespace moneyadmin\tinkoffPay\notify;
+namespace ivan-cc\tinkoffPay\notify;
 
 
 class ErrorNotify
