@@ -6,7 +6,7 @@
  * Time: 14:55
  */
 
-namespace moneyadmin\tinkoffPay\request;
+namespace ivan_cc\tinkoffPay\request;
 
 
 interface RequestInterface
