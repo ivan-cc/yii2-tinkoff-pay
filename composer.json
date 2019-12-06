@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "ivan-cc\\tinkoffPay\\": ""
+            "ivan_cc\\tinkoffPay\\": ""
         }
     }
 }
