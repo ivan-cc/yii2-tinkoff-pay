@@ -1,12 +1,12 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: moneyadmin
+ * User: ivan-cc
  * Date: 29.12.2018
  * Time: 13:04
  */
 
-namespace moneyadmin\tinkoffPay\notify;
+namespace ivan-cc\tinkoffPay\notify;
 
 
 class NotifyInit extends AbstractNotify
