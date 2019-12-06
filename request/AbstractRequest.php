@@ -6,13 +6,13 @@
  * Time: 15:17
  */
 
-namespace moneyadmin\tinkoffPay\request;
+namespace ivan_cc\tinkoffPay\request;
 
 /**
  * Class AbstractRequest
  *
  *
- * @package chumakovanton\tinkoffPay\request
+ * @package ivan_cc\tinkoffPay\request
  */
 abstract class AbstractRequest implements RequestInterface
 {
