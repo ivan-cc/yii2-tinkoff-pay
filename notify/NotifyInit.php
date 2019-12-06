@@ -6,7 +6,7 @@
  * Time: 13:04
  */
 
-namespace ivan-cc\tinkoffPay\notify;
+namespace ivan_cc\tinkoffPay\notify;
 
 
 class NotifyInit extends AbstractNotify
