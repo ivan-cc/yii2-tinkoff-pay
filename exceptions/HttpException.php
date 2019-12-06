@@ -6,7 +6,7 @@
  * Time: 17:19
  */
 
-namespace ivan-cc\tinkoffPay\exceptions;
+namespace ivan_cc\tinkoffPay\exceptions;
 
 
 class HttpException extends \yii\web\HttpException
