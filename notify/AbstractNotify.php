@@ -1,12 +1,12 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: moneyadmin
+ * User: ivan-cc
  * Date: 29.12.18
  * Time: 17:24
  */
 
-namespace moneyadmin\tinkoffPay\notify;
+namespace ivan-cc\tinkoffPay\notify;
 
 
 use yii\helpers\Json;
