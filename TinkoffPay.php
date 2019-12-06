@@ -6,13 +6,13 @@
  * Time: 11:24
  */
 
-namespace moneyadmin\tinkoffPay;
+namespace ivan_cc\tinkoffPay;
 
 
-use moneyadmin\tinkoffPay\request\RequestInit;
-use moneyadmin\tinkoffPay\request\RequestInterface;
-use moneyadmin\tinkoffPay\response\ResponseInit;
-use moneyadmin\tinkoffPay\notify\NotifyInit;
+use ivan_cc\tinkoffPay\request\RequestInit;
+use ivan_cc\tinkoffPay\request\RequestInterface;
+use ivan_cc\tinkoffPay\response\ResponseInit;
+use ivan_cc\tinkoffPay\notify\NotifyInit;
 use RuntimeException;
 use yii\base\BaseObject;
 
@@ -21,7 +21,7 @@ use yii\base\BaseObject;
  *
  * @author Chumakov Anton <anton.4umakov@yandex.ru>
  *
- * @package chumakovanton\tinkoffPay
+ * @package ivan_cc\tinkoffPay
  *
  * @property string $terminalKey
  * @property string $secretKey
