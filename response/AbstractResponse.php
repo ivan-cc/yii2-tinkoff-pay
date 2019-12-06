@@ -6,7 +6,7 @@
  * Time: 15:35
  */
 
-namespace moneyadmin\tinkoffPay\response;
+namespace ivan_cc\tinkoffPay\response;
 
 
 use yii\helpers\Json;
