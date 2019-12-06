@@ -6,7 +6,7 @@
  * Time: 17:27
  */
 
-namespace ivan-cc\tinkoffPay\notify;
+namespace ivan_cc\tinkoffPay\notify;
 
 
 class ErrorNotify
