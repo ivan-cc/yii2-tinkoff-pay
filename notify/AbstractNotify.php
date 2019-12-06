@@ -6,7 +6,7 @@
  * Time: 17:24
  */
 
-namespace ivan-cc\tinkoffPay\notify;
+namespace ivan_cc\tinkoffPay\notify;
 
 
 use yii\helpers\Json;
