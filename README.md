@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist chumakovanton/yii2-tinkoff-pay "*"
+php composer.phar require --prefer-dist ivan_cc/yii2-tinkoff-pay "*"
 ```
 
 or add
 
 ```
-"chumakovanton/yii2-tinkoff-pay": "*"
+"ivan_cc/yii2-tinkoff-pay": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -31,7 +31,7 @@ Config application :
 'components' => [
     //  ...
     'tinkoffPay' => [
-            'class' => \chumakovanton\tinkoffPay\TinkoffPay::className(),
+            'class' => \ivan_cc\tinkoffPay\TinkoffPay::class,
             'terminalKey' => 'terminalKey',
             'secretKey' => 'secretKey',
             'apiUrl' => 'https://securepay.tinkoff.ru/v2'
