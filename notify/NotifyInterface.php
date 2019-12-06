@@ -6,7 +6,7 @@
  * Time: 17:26
  */
 
-namespace ivan-cc\tinkoffPay\notify;
+namespace ivan_cc\tinkoffPay\notify;
 
 
 /**
